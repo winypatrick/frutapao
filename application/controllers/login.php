@@ -21,14 +21,13 @@ class Login extends CI_Controller {
           {
             $date['msg']="atencao verifica Email ou senha esta incorreto ";
           }
-
+          
           $this->load->view('pages/login', $date);
         }
     }
 
 
 public function acesso(){
-
    $this->form_validation->set_rules('email', 'email', 'required');  //define regras
    $this->form_validation->set_rules('password', 'password', 'required'); //define regras
 
